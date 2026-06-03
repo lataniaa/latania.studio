@@ -1,65 +1,86 @@
-import Image from "next/image";
+import CursorBurst from "@/app/components/cursor-burst";
+import FooterInteractions from "@/app/components/footer-interactions";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <FooterInteractions />
+
+      {/* Hero section */}
+      <div className="panel sticky top-0 z-0 md:h-screen">
+        <div id="cursor-stage" aria-hidden="true"></div>
+        <CursorBurst />
+
+        <div className="md:absolute inset-0 z-[2] flex flex-col items-center justify-center gap-6 text-center pointer-events-none py-16 md:py-0">
+          <h1 className="m-0 uppercase font-stolzl font-bold tracking-[-0.01em] text-[50px] md:text-[80px] leading-[.95]">AAAA STUDIO</h1>
+          <p className="m-0 font-stolzl font-[200] uppercase text-[clamp(12px,0.97vw,16px)]">Designer and Front-End developper</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 bottom-[45px] z-[2] pointer-events-none font-stolzl font-[200] text-[clamp(12px,0.97vw,16px)] uppercase">Scroll down</div>
+      </div>
+
+      {/* Contenu */}
+      <div className="panel relative z-10 border-t border-[#404040]">
+
+        {/* Services */}
+        <section className="flex flex-col gap-8 py-8 px-8">
+          <h1 className="text-center">We can <span className="text-[#F9B2C9]">#help</span> you with...</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div className="flex flex-col gap-1">
+              <p>//01</p>
+              <h3>Website design</h3>
+              <p>I'll build your website from scratch (or fixing the one that gives you headaches). Modern, responsive, tailored to your goals.</p>
+            </div>
+            <div className="flex flex-col gap-1">
+              <p>//02</p>
+              <h3>Branding</h3>
+              <p>I design full brand kits that include your colors, fonts, logo variations, and everything you need to show up confidently.</p>
+            </div>
+            <div className="flex flex-col gap-1">
+              <p>//03</p>
+              <h3>Digital products</h3>
+              <p>E-books, business cards, social media templates, brochures... I create custom assets that help you communicate clearly.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Portfolio */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-12 py-8 px-8">
+          <div>
+            <h1>A glimpse of some <span className="text-[#F9B2C9]">#projects</span> I've done</h1>
+            <a href="" className="btn mt-2">Learn more</a>
+          </div>
+
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="flex flex-col gap-3 center">
+              <a href="">
+                <img src="https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg" alt="portfolio image" className="rounded-2xl w-full aspect-[6/5] object-cover"/>
+              </a>
+              <p className="uppercase text-base font-[400] text-center">BDG Esport</p>
+              <div className="flex flex-wrap gap-1 justify-center">
+                <span className="etiquette">brand identity</span>
+                <span className="etiquette">design</span>
+                <span className="etiquette">esport</span>
+              </div>
+            </div>
+          ))}
+        </section>
+
+        {/* Banniere */}
+        <div className="marquee">
+          <div className="marquee__group">
+            <span>Let's work together !  &nbsp;&nbsp;♡</span>
+            <span>Let's work together !  &nbsp;&nbsp;♡</span>
+            <span>Let's work together !  &nbsp;&nbsp;♡</span>
+          </div>
+          <div className="marquee__group" aria-hidden="true">
+            <span>Let's work together !  &nbsp;&nbsp;♡</span>
+            <span>Let's work together !  &nbsp;&nbsp;♡</span>
+            <span>Let's work together !  &nbsp;&nbsp;♡</span>
+          </div>
         </div>
-      </main>
-    </div>
+
+      </div>
+    </main>
   );
 }
