@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/app/components/header";
-import Footer from "@/app/components/footer";
 
 export const metadata: Metadata = {
   title: "Latania Studio",
@@ -18,7 +17,6 @@ export default function RootLayout({
       <body className="bg-[#151515] text-[#F8F5F0]">
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
