@@ -2,9 +2,9 @@ import Link from "next/link"
 
 export default function FooterAlt() {
   return (
-    <footer className="flex flex-col sm:flex-row sm:justify-between sm:items-end border-t border-[#404040]">
+    <footer className="flex flex-col sm:flex-row sm:justify-between sm:items-end border-t border-[#404040] ">
       <div className="flex flex-col gap-4 py-8 px-8">
-        <h1>Get in touch</h1>
+        <h2>Get in touch</h2>
         <div className="uppercase text-xs flex flex-col gap-2 sm:flex-row ">
           <Link href="/contact" className="hover:text-[#F9B2C9]">Contact</Link>
           <a href="https://www.behance.net/lataniaa" target="_blank" className="hover:text-[#F9B2C9]">Behance</a>

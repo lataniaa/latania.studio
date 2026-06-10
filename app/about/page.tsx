@@ -3,31 +3,36 @@ import FooterInteractions from "@/app/components/footer-interactions"
 
 export default function About() {
   return (
-    <main className="flex flex-col gap-15 pb-8 px-8 md:mt-[94px]">
+    <main className="flex flex-col gap-16 pb-16 px-8 md:mt-[94px] lg:mt-0 lg:px-32">
       <FooterInteractions />
 
       {/* Intro */}
-      <section className="flex flex-col gap-5 sm:flex-row md:h-screen items-center justify-center">
-        <Image src="/images/tripleemoji.png" alt="About image" width={256} height={256} className="w-48 h-auto self-center sm:w-64"/>
-        <div className="flex flex-col gap-5">
-          <h1 className="sm:text-left text-center">Hi, I'm </h1>
-          <div>
-            <p>After studying business with a focus on branding and communication, I quickly fell in love with web design during an internship. That's when I discovered WordPress… and never really looked back.</p>
-            <p>Curious (and a bit stubborn), I taught myself how to code, then went back to school to sharpen my skills and become a full-stack web developer.</p>
-            <p>Now, I get to mix strategy, design and tech to create brands and websites that feel as good as they look.</p>
-          </div>
-          <p className="font-stolzl font-bold uppercase text-lg sm:text-left text-center">My favorite tools</p>
-          <div className="flex gap-3 justify-center sm:justify-start">
-            <Image src="/icons/behance.png" alt="Behance Logo" width={32} height={32} className="w-8 h-auto"/>
-            <Image src="/icons/behance.png" alt="Behance Logo" width={32} height={32} className="w-8 h-auto"/>
-          </div>
-        </div>
-      </section>
+<section className="flex flex-col gap-8 sm:flex-row md:h-screen items-center justify-center">
+  <div className="w-full sm:w-1/2 flex items-center justify-center">
+    <Image src="/images/tripleemoji.png" alt="About image" width={256} height={256} className="w-48 sm:w-120 h-auto"/>
+  </div>
+  <div className="flex flex-col gap-5 w-full sm:w-1/2 lg:gap-10">
+    <h1 className="sm:text-left text-center">Hi, I'm Latania</h1>
+    <div>
+      <p>After studying business with a focus on branding and communication, I quickly fell in love with web design during an internship. That's when I discovered WordPress… and never really looked back.</p>
+      <p>Curious (and a bit stubborn), I taught myself how to code, then went back to school to sharpen my skills and become a full-stack web developer.</p>
+      <p>Now, I get to mix strategy, design and tech to create brands and websites that feel as good as they look.</p>
+    </div>
+    <div className="flex flex-col gap-3">
+      <p className="font-stolzl font-bold uppercase text-lg sm:text-left text-center">My favorite tools</p>
+      <div className="flex gap-3 justify-center sm:justify-start">
+        <Image src="/icons/behance.png" alt="Behance Logo" width={32} height={32} className="w-8 h-auto"/>
+        <Image src="/icons/behance.png" alt="Behance Logo" width={32} height={32} className="w-8 h-auto"/>
+      </div>
+    </div>
+  </div>
+</section>
+   
 
       {/* Skills */}
-      <section className="flex flex-col gap-8">
-        <h1 className="text-center">I specialize in a range of <span className="text-[#F9B2C9]">#skills</span></h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="flex flex-col gap-8 lg:gap-24 lg:pb-56">
+        <h2 className="text-center lg:px-56">I specialize in a range of <span className="text-[#F9B2C9]">#skills</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-20">
 
           {[
             {
@@ -61,9 +66,9 @@ export default function About() {
               desc: "Crafting accessible and modern interfaces using HTML, CSS, JS, and React."
             },
           ].map((item, i) => (
-            <div key={i} className="group flex flex-col gap-2 rounded-2xl border border-[#404040] bg-[#262626] p-5 items-center hover:border-[#F9B2C9]">
+            <div key={i} className="group flex flex-col gap-2 lg:gap-5 rounded-2xl border border-[#404040] bg-[#262626] p-5 lg:p-12 items-center hover:border-[#F9B2C9]">
               {item.svg}
-              <p className="text-[16px] font-[400] text-center group-hover:text-[#F9B2C9]">{item.title}</p>
+              <p className="text-[16px] font-[400] text-center lg:text-[22px] group-hover:text-[#F9B2C9] leading-[1.3]">{item.title}</p>
               <p className="text-center group-hover:text-[#F9B2C9]">{item.desc}</p>
             </div>
           ))}

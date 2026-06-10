@@ -1,6 +1,6 @@
 export default function Policy() {
   return (
-    <main className="flex flex-col md:flex-row gap-15 py-8 px-8 md:mt-[94px]">
+    <main className="flex flex-col md:flex-row gap-16 pt-8 pb-16 px-8 md:mt-[94px]">
       <div className="flex flex-col md:flex-row gap-12">
         <h1>Policy</h1>
         <div className="flex flex-col gap-8">

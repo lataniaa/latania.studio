@@ -10,7 +10,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="md:fixed md:top-0 md:left-0 md:w-full z-50 py-4 px-8 md:bg-[#151515] h-[94px] flex items-center">
+    <header className="md:fixed md:top-0 md:left-0 md:w-full z-50 py-4 px-8 lg:px-32 md:bg-[#151515] h-[94px] flex items-center   ">
       <div className="flex items-center justify-between w-full">
         <Image src="/images/LOGO.png" alt="Latania Studio Icon" width={64} height={64} className="w-16 h-auto" />
 

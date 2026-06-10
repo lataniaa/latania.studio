@@ -36,23 +36,23 @@ export default async function ProjectPage({
   const project = projects.find(p => p.id === id)
 
   if (!project) {
-    return <main className="md:mt-[94px] py-8 px-8"><p>Projet introuvable.</p></main>
+    return <main className="md:mt-[94px] pt-8 pb-16 px-8"><p>Projet introuvable.</p></main>
   }
 
   return (
     <>
       <FooterInteractions />
-      <main className="flex flex-col gap-15 py-8 px-8 md:mt-[94px]">
+      <main className="flex flex-col gap-8 pt-8 pb-16 px-8 md:mt-[94px] lg:gap-24 lg:pt-32 lg:pb-56 lg:px-32  ">
 
-        <div className="flex flex-col md:flex-row gap-12 items-center">
-          <div className="w-full md:w-1/2 flex flex-col gap-6 order-last md:order-first">
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="w-full md:w-1/2 flex flex-col gap-3 lg:gap-6 order-last md:order-first">
             <h1>{project.nom}</h1>
             <div className="flex flex-wrap gap-1">
               {project.tags.map((tag) => (
                 <span key={tag} className="etiquette">{tag}</span>
               ))}
             </div>
-            <p className="pt-2">{project.description}</p>
+            <p className="pt-2 lg:pr-32 xl:pr-56">{project.description}</p>
           </div>
           <img src={project.imagePrincipale} alt="portfolio image" className="w-full md:w-1/2 rounded-2xl aspect-[6/4] object-cover order-first md:order-last"/>
         </div>
