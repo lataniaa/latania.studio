@@ -16,6 +16,8 @@ export default function Services() {
           </div>
         </section>
 
+        <img src="https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg" alt="portfolio image" className="w-full aspect-[6/4] object-cover my-8 sm:hidden"/>
+
         {/* Cards */}
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-8 lg:gap-24 lg:pt-16 lg:pb-56 lg:px-32">
           {[
@@ -95,7 +97,7 @@ export default function Services() {
                   <li key={j}>{item}</li>
                 ))}
               </ul>
-              <a href="" className="uppercase hover:text-[#F8F5F0] hover:text-[#F9B2C9]">Learn more</a>
+              <a href="" className="uppercase hover:text-[#F9B2C9] transition-colors duration-300">Learn more</a>
             </div>
           ))}
         </section>

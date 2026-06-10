@@ -21,7 +21,7 @@ export default function Portfolio() {
           {projects.map((project) => (
             <div key={project.id} className="flex flex-col gap-3">
               <Link href={`/portfolio/${project.id}`}>
-                <img src={project.image} alt="portfolio image" className="rounded-2xl w-full aspect-[6/4] object-cover"/>
+                <img src={project.image} alt="portfolio image" className="rounded-2xl w-full aspect-[6/4] object-cover hover:scale-[1.008] transition-transform duration-300"/>
               </Link>
               <p className="uppercase text-base font-[400] text-center">{project.nom}</p>
               <div className="flex flex-wrap gap-1 justify-center">

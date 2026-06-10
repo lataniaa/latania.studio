@@ -22,18 +22,18 @@ export default function Footer() {
           <h2 className="text-center">Think I'd be a good <span className="text-[#F9B2C9]">#fit</span> ? <br/>Let's connect.</h2>
           <div className="flex flex-row gap-[clamp(24px,2.78vw,60px)]">
             <Link 
-  href="/contact" 
-  id="runaway" 
-  className="inline-flex items-center justify-center bg-[#181818] text-[#F8F5F0] border border-[#F8F5F0] rounded-full px-8 py-3 lg:py-4 font-stolzl font-[500] text-sm uppercase cursor-pointer no-underline transition-none z-[2]"
->
-  Jump on a call
-</Link>
+              href="/contact" 
+              id="runaway" 
+              className="inline-flex items-center justify-center bg-[#181818] text-[#F8F5F0] border border-[#F8F5F0] rounded-full px-8 py-3 lg:py-4 font-stolzl font-[500] text-sm uppercase cursor-pointer no-underline transition-none z-[2]"
+            >
+              Jump on a call
+            </Link>
             <Link 
-  href="/contact" 
-  className="inline-flex items-center justify-center bg-[#F8F5F0] text-[#181818] rounded-full px-8 py-3 lg:py-4 font-stolzl font-[500] text-sm uppercase cursor-pointer no-underline hover:-translate-y-0.5 hover:brightness-95 transition-all duration-300"
->
-  Send a message
-</Link>
+              href="/contact" 
+              className="inline-flex items-center justify-center bg-[#F8F5F0] text-[#181818] rounded-full px-8 py-3 lg:py-4 font-stolzl font-[500] text-sm uppercase cursor-pointer no-underline hover:-translate-y-0.5 hover:bg-[#F9B2C9] hover:brightness-100 transition-all duration-300"
+            >
+              Send a message
+            </Link>
           </div>
           <p id="anx-msg" className="opacity-0 transition-opacity duration-300 mt-3 text-[#F9B2C9]">sorry, i have social anxiety...</p>
         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
             <SocialIcon href="https://fr.pinterest.com/lunalistudio/" src="/icons/pinterest.png" srcHover="/icons/pinterestpink.png" alt="icon pinterest"/>
           </div>
           <div className="uppercase text-xs">
-            <p className="text-center">© 2025 Latania Studio. All rights reserved | <Link href="/policy" className="hover:text-[#F9B2C9]">Policy</Link></p>
+            <p className="text-center">© 2025 Latania Studio. All rights reserved | <Link href="/policy" >Policy</Link></p>
           </div>
         </div>
       </footer>
@@ -56,15 +56,15 @@ export default function Footer() {
         <div className="flex flex-col gap-4 py-8 px-8">
           <h2>Get in touch</h2>
           <div className="uppercase text-xs flex flex-col gap-2 sm:flex-row ">
-            <Link href="/contact" className="hover:text-[#F9B2C9]">Contact</Link>
-            <a href="https://www.behance.net/lataniaa" target="_blank" className="hover:text-[#F9B2C9]">Behance</a>
-            <a href="https://www.instagram.com/lunali_studio/" target="_blank" className="hover:text-[#F9B2C9]">Instagram</a>
-            <a href="https://dribbble.com" target="_blank" className="hover:text-[#F9B2C9]">Dribbble</a>
-            <a href="https://fr.pinterest.com/lunalistudio/" target="_blank" className="hover:text-[#F9B2C9]">Pinterest</a>
+            <Link href="/contact" >Contact</Link>
+            <a href="https://www.behance.net/lataniaa" target="_blank" >Behance</a>
+            <a href="https://www.instagram.com/lunali_studio/" target="_blank" >Instagram</a>
+            <a href="https://dribbble.com" target="_blank" >Dribbble</a>
+            <a href="https://fr.pinterest.com/lunalistudio/" target="_blank" >Pinterest</a>
           </div>
         </div>
         <div className="uppercase text-xs px-8 pb-8">
-          <p>© 2025 Latania Studio. All rights reserved | <Link href="/policy" className="hover:text-[#F9B2C9]">Policy</Link></p>
+          <p>© 2025 Latania Studio. All rights reserved | <Link href="/policy" >Policy</Link></p>
         </div>
       </footer>
     </>
