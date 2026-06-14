@@ -77,7 +77,7 @@ export default function FooterInteractions() {
         window.removeEventListener("resize", moveRandom)
         ph.remove()
       }
-    }, 100)
+    },100)
 
     return () => clearTimeout(timer)
   }, [pathname])

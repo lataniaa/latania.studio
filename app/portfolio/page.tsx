@@ -1,13 +1,12 @@
 import Link from "next/link"
 import FooterInteractions from "@/app/components/footer-interactions"
+import Footer from "@/app/components/footer"
 
 const projects = [
-  { id: "1", nom: "BDG Esport", image: "https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg", tags: ["brand identity", "design", "esport"] },
-  { id: "2", nom: "BDG Esport", image: "https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg", tags: ["brand identity", "design", "esport"] },
-  { id: "3", nom: "BDG Esport", image: "https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg", tags: ["brand identity", "design", "esport"] },
-  { id: "4", nom: "BDG Esport", image: "https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg", tags: ["brand identity", "design", "esport"] },
-  { id: "5", nom: "BDG Esport", image: "https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg", tags: ["brand identity", "design", "esport"] },
-  { id: "6", nom: "BDG Esport", image: "https://i.pinimg.com/736x/8f/22/a0/8f22a09b021328488f023e05abcd1aa2.jpg", tags: ["brand identity", "design", "esport"] },
+  { id: "1", nom: "BDG Esport", image: "/images/bdgesports/1.png", tags: ["branding", "graphic design", "esport"] },
+  { id: "2", nom: "Frostie", image: "/images/frostie/3.png", tags: ["branding", "packaging", "concept"] },
+  { id: "3", nom: "Glaze", image: "/images/glaze/4.png", tags: ["branding", "packaging", "concept"] },
+  { id: "4", nom: "Oakley Lookbook concept", image: "/images/oakley/3.png", tags: ["website", "lookbook", "concept"] },
 ]
 
 export default function Portfolio() {
@@ -33,6 +32,7 @@ export default function Portfolio() {
           ))}
         </div>
       </main>
+      <Footer />
     </>
   )
 }
