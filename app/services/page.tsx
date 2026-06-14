@@ -1,6 +1,7 @@
 import Link from "next/link"
 import FooterInteractions from "@/app/components/footer-interactions"
 
+
 export default function Services() {
   return (
     <>
@@ -12,7 +13,9 @@ export default function Services() {
           <div className="flex flex-col items-center gap-4 lg:gap-8">
             <h1 className="text-center">Services I <span className="text-[#F9B2C9]">#offer</span></h1>
             <p className="text-center sm:w-2/3  2xl:w-1/3">I provide tailored digital solutions designed to help your brand grow online. From modern showcase websites to powerful e-commerce platforms, unique branding, and custom services, we create everything with care, clarity, and a focus on real results.</p>
-            <a href="" className="btn mt-2">Let's do this</a>
+            <Link href="/contact" className="btn mt-2">
+              Let's do this
+            </Link>
           </div>
         </section>
 
@@ -97,7 +100,7 @@ export default function Services() {
                   <li key={j}>{item}</li>
                 ))}
               </ul>
-              <a href="" className="uppercase hover:text-[#F9B2C9] transition-colors duration-300">Learn more</a>
+              <a href="/contact" className="uppercase hover:text-[#F9B2C9] transition-colors duration-300">Learn more</a>
             </div>
           ))}
         </section>

@@ -315,3 +315,52 @@
 .anx-msg.show {
   opacity: 1;
 }
+
+/* Slide Button  */
+
+/*
+.slide-btn-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9B2C9;
+  color: #151515;
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.slide-btn-wrapper:hover {
+  background-color: #F8F5F0;
+}
+
+.slide-btn-wrapper div {
+  position: relative;
+  transition: transform 0.15s linear;
+}
+
+.slide-btn-wrapper div span {
+  display: block;
+}
+
+.slide-btn-wrapper div span:last-of-type {
+  position: absolute;
+  inset: 0;
+  transform: translateY(500%);
+}
+
+.slide-btn-wrapper:hover div {
+  transform: translateY(-500%);
+}
+
+*/

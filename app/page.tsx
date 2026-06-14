@@ -2,6 +2,8 @@ import CursorBurst from "@/app/components/cursor-burst";
 import FooterInteractions from "@/app/components/footer-interactions";
 import Footer from "@/app/components/footer";
 import Image from "next/image"
+{/*import SlideButton from "@/app/components/slide-button";*/}
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -56,7 +58,8 @@ export default function Home() {
           <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 pb-8 px-8 lg:gap-24 lg:pt-32 lg:pb-56 lg:px-32">
             <div className="flex flex-col gap-8 lg:gap-16 items-start">
               <h2>A glimpse of some <span className="text-[#F9B2C9]">#projects</span> I've done</h2>
-              <a href="" className="btn mt-2">Learn more</a>
+              <a href="/portfolio" className="btn mt-2">See my work</a>
+              {/* <SlideButton href="/portfolio" label="See my work" className="mt-2" /> */}
             </div>
 
             {[
